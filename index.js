@@ -16,6 +16,7 @@
 // }
 // // use let instead of const because we need to increment the value of age.
 
+const carArray = ["benz","benz","benz","benz","benz","benz","benz"]
 // Using for with Arrays
 
 const gifts = ["teddy bear", "drone", "doll"];
@@ -35,32 +36,39 @@ function writeCards()
 
 // Exercise
 const writeCards = (names, occasion) => {
-    let messages = [];
-    for (let i = 0; i < names.length; i++) {
-      messages.push(Thank you, ${names[i]}, for the wonderful ${occasion} gift!);
-    }
-    return messages;
-  };
-  
-  const names = ["whit", "jane", "whishi"];
-  const occasion = "birthday";
-  const messages = writeCards(names, occasion);
-  console.log(messages);
+  let messages = [];
+  for (let i = 0; i < names.length; i++) {
+    messages.push(Thank you, ${ names[i]}, for the wonderful ${ occasion } gift!);
+  }
+  return messages;
+};
+
+const names = ["whit", "jane", "whishi"];
+const occasion = "birthday";
+const messages = writeCards(names, occasion);
+console.log(messages);
 
 
 
 let count = 10;
-function countDown(count){
-    while(count >=0){
-        console.log(count)
-        count --;
-    }
-    return count;
+function countDown(count) {
+  while (count >= 0) {
+    console.log(count)
+    count--;
+  }
+  return count;
 }
 countDown(count);
 )
 
 // The while loop
+while ([condition]) {
+  [loop body]
+}
 
+// [condition]
+// [loop body]
+// When using while loops, it is easy to forget to involve iteration.
+// Leaving iteration out can result in a condition that always evaluates to true, causing an infinite loop!
 
-
+ 
